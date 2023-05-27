@@ -1,0 +1,242 @@
+
+
+1. HTML code structure:
+
+Every HTML code consists of opening and closing tags with content between them.
+
+<title> This is the page title </title>
+
+
+2. HTML file structure:
+
+Every HTML code consists of the tags mentioned below:
+
+<!DOCTYPE html>
+ 
+<html>
+    <head>
+    
+    </head>
+ 
+    <body>
+    
+    </body>
+</html>
+Inside <head> tag, we add information about the HTML file.
+
+inside <body> tag, we add the content we want to display on our web page.
+
+
+
+3. Some common text tags:
+
+<h1> .. <h6> = heading
+
+<p> = paragraph
+
+<strong> = bold text
+
+<em> = italic text
+
+
+
+4. List:
+
+There are two types of lists which are called "ordered list" and "unordered list," and inside each, we can have "list items" as shown below:
+
+Ordered list:
+
+<ol>
+    <li> First item </li>
+    <li> Second item </li>
+</ol>
+Unordered list:
+
+<ul>
+    <li> First item </li>
+    <li> Second item </li>
+</ul>
+
+
+5. Link:
+
+To create links, we use <a> tag, and the content coming in between will be the text showing the link.
+
+<a> Click Here </a>
+Attribute:
+
+Attributes are additional information added inside the opening tags. For example, for <a> tag, we use "href" attribute to add the destination URL.
+
+<a href="example .com" > Click Here </a>
+
+
+6. Self-closing tag:
+
+In HTML, some tags don't have any content, so they don't need a closing tag. That's why we call them self-closing tags, like examples mentioned below:
+
+<br>
+
+<hr>
+
+
+
+7. Image:
+
+Image is a self-closing tag, and we add the content using "src" attribute.
+
+<img src="images/cat.png">
+
+
+8. HTML comment:
+
+Comments are notes which have no effect on the code, just a reminder or a note for developers. We use comments for three main reasons:
+
+To organize our code
+
+If other developers look at our code, they understand it better through comments
+
+If we look at our code after a while, comments help us understand
+
+Here is how we create a comment in HTML:
+
+<!-- The comment is here -->
+
+
+
+
+
+1. CSS structure:
+
+In CSS, we target a specific element on our HTML code and make some changes using the formula below:
+
+Which {     What : How ; }
+
+Which: we refer to which element in HTML code.
+
+What: we refer to what property of that element we should affect.
+
+How: we refer to the way we should affect an element property.
+
+h1{    color: red;}
+
+
+
+
+2. Some basic CSS properties:
+
+The code below changes the background color of an element.
+
+h1{    baackground-color: black; }
+
+
+The code below changes the font size of an element.
+
+h1{    font-size: 20px; }
+
+
+The code below changes the text color of an element.
+
+h1{    color: purple; }
+
+
+The code below changes the font family of an element.
+
+h1{    font-family: arial, helvetica, sans-serif; }
+
+
+
+
+3. Three types of CSS:
+
+There are three ways to add CSS to our code which are inline, internal, and external.
+
+
+
+Inline CSS:
+
+we add the code inside the tag of each element.
+
+<p style="color:white; ">This is a sample text</p>
+
+
+Internal CSS:
+
+By adding <style> tag inside the <head> tag of our HTML file, we can add CSS code.
+
+<style>
+    p{    color: white; }
+</style>
+
+
+External CSS:
+
+We can connect HTML file to a CSS file by writing the code below inside the <head> tag of an HTML file.
+
+<link rel="stylesheet" href="style.css">
+
+
+
+
+4. Debugging:
+
+You can use Chrome developer tool by right-clicking on any web page and selecting inspect from the menu. THere you have the ability to see the codes. If there is any error, you can view it inside the console tab of the developer tool.
+
+
+
+5. CSS selectors:
+
+There are different types of selectors to target elements and change their properties.
+
+
+
+Tag selector:
+
+use the tag name of targeted element inside the CSS code.
+
+h1{ }
+p{ }
+body{ }
+
+
+Class selector:
+
+We can add class names to each element, and this way, we can target a set of elements using their class name.
+
+HTML:
+
+<p class="select">This is a sample text</p>
+CSS:
+
+.select{ }
+
+
+Id selector:
+
+We can add id names to each element, and this way, we can target an element using its id name.
+
+HTML:
+
+<p id="main">This is a sample text</p>
+CSS:
+
+#main{ }
+
+
+
+
+6. Id vs class:
+
+Each element can have several class names, but it can only have one id name.
+
+we can use a class name for different elements, but each id is unique and usable only for one element.
+
+
+
+
+
+7. CSS comments:
+
+to create a comment in CSS, you can use this sign /*  */ as shown below.
+
+/* This is a css comment. */
+
